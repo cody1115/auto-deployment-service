@@ -1,0 +1,6 @@
+---
+
+- name: Deploy OS environment
+  hosts: localhost
+  roles:
+    - common

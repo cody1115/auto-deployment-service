@@ -1,9 +1,5 @@
 ---
 
-# install prerequisite pkgs
-- include: common.yaml
-
-
 - name: Download project source code
   git:
     repo: "{{ git_repo_project }}"
