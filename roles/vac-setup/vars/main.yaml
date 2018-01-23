@@ -1,14 +1,5 @@
 ---
 virtualenv_path: "/opt/env"
 
-os_tools:
-  - git
-  - python-pip
-
-pip_deps:
-  - virtualenv
-  - pyvmomi
-  - pyyaml
-  
 git_repo_project: "https://github.com/cody1115/openstack-ansible-settings.git"
 git_repo_test: "https://github.com/cody1115/openstack-ansible-settings.git"

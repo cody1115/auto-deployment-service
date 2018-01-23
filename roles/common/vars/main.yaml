@@ -1,0 +1,11 @@
+---
+virtualenv_path: "/opt/env"
+
+os_tools:
+  - git
+  - python-pip
+
+pip_deps:
+  - virtualenv
+  - pyvmomi
+  - pyyaml
