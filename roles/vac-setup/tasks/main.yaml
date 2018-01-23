@@ -1,0 +1,18 @@
+---
+
+# install prerequisite pkgs
+- include: common.yaml
+
+
+- name: Download project source code
+  git:
+    repo: "{{ git_repo_project }}"
+    dest: /opt/
+
+- name: Deploy project
+  command: ""
+
+- name: Download test cases
+  git:
+    repo: "{{ git_repo_test }}"
+    dest: /opt/

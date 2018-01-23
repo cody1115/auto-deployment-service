@@ -1,0 +1,6 @@
+---
+
+- name: Start automatic testing
+  hosts: localhost
+  roles:
+    - vac-setup

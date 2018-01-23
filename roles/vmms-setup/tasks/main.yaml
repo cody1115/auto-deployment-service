@@ -1,0 +1,11 @@
+---
+- name: Python setup
+  apt:
+    name: python2.7
+    state: present
+
+# Install VMMS
+- name: Download VMMS
+  git:
+    repo: 'https://github.com/cody1115/openstack-ansible-settings.git'
+    dest: /opt/

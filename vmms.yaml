@@ -1,0 +1,4 @@
+- name: Virtual Machine Management System
+  hosts: localhost
+  roles:
+    - vmms-setup

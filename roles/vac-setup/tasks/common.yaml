@@ -1,0 +1,23 @@
+---
+- name: Python setup
+  apt:
+    name: python2.7
+    state: present
+
+- name: Install OS tools
+  apt:
+    name: "{{ item }}"
+  with_items: "{{ os_tools }}"
+
+- name: Install virtualenv
+  pip:
+    name: virtualenv
+
+- name: Configure virtualenv
+  command: virtualenv "{{ virtualenv_path }}"
+  
+- name: Install pip deps
+  pip:
+    virtualenv: "{{ virtualenv_path }}"
+    name: "{{ item }}"
+  with_items: "{{ pip_deps }}"
